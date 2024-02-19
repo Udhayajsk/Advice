@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Advice Display</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(img2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur;
+  }
+  .advice-box {
+    algin-bottom: 20px;
+    border-radius: 10px;
+    background:pink;
+    box-shadow: 10px 10px 10px cyan;
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(245, 175, 26, 0.18);
+   
+  }
+  
+  #today-advice {
+    font-weight: bold;
+    font-size: 24px;
+    
+  }
+  #advice {
+    font-weight: bold;
+    font-size: 18px;
+    border: 3px solid rgb(0, 2, 12);
+  }
+  .btn-primary {
+    margin-top: 10px;
+    background-color: rgb(11, 167, 154);
+  }
+  .btn-primary:hover {
+    background-color: rgb(9, 134, 82);
+  }
+  .btn-primary:active {
+    background-color: rgb(8, 90, 45);
+  }
+
+ 
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="advice-box">
+        <div class="container1">
+        <h2 class="text-center">Today's Advice</h2>
+        <p class="text-center" id="advice"></p>
+        <button class="btn btn-primary btn-block" onclick="fetchAdvice()">Refresh</button>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
+
